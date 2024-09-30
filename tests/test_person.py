@@ -23,3 +23,7 @@ def test_last_name(person):
 
 def test_age(person):
     assert person.age == 21
+
+
+def test_failure():
+    assert False
