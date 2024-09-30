@@ -19,4 +19,3 @@ def test_first_name(person):
 
 def test_last_name(person):
     assert person.last_name == "White"
-
