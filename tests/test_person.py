@@ -1,16 +1,16 @@
-from beings import Person
+from people.person import Person
 from pytest import fixture
 
 
 @fixture
 def person():
-    return Person("Bob White", 21, jobs=["Baker"])
+    return Person("Bob White", 21, job="Baker")
 
 
 def test_init(person):
     assert person.name == "Bob White"
     assert person.age == 21
-    assert person.jobs == ["Baker"]
+    assert person.job == "Baker"
 
 
 def test_first_name(person):

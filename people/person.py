@@ -1,11 +1,12 @@
 from typing import Optional
+from dataclasses import dataclass
 
 
+@dataclass
 class Person:
-    def __init__(self, name: str, age: int, jobs: Optional[list[str]] = None) -> None:
-        self.name = name
-        self.age = age
-        self.jobs = jobs or []
+    name: str
+    age: int
+    job: str
 
     @property
     def first_name(self) -> str:
