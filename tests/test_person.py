@@ -19,3 +19,7 @@ def test_first_name(person):
 
 def test_last_name(person):
     assert person.last_name == "White"
+
+
+def test_age(person):
+    assert person.age == 21
